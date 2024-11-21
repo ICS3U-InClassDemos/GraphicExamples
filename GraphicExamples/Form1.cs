@@ -19,10 +19,8 @@ namespace GraphicExamples
 
         private void Form1_Shown(object sender, EventArgs e)
         {
-            this.Text = "Graphic Examples";
-
-            System.Drawing.Graphics g = this.CreateGraphics();
-            Pen redPen = new Pen(Color.Red, 10);
+            Graphics g = this.CreateGraphics();
+            Pen redPen = new Pen(Color.Red, 1);
             SolidBrush blackBrush = new SolidBrush(Color.Black);
 
             g.Clear(Color.White);
